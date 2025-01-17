@@ -69,3 +69,8 @@ Analizując wykresy przedstawiające wyniki treningu dla modelu `900_images.onnx
 - Wartości `Recall` dla obu modeli oscylują w zakresie ~0.8-0.9 (dla obu klas B i M).
 - Model `900_images.onnx` osiąga minimalnie wyższe wartości `mAP50` (~0.92) i `mAP50-95` (~0.7), co wskazuje, że radzi sobie lepiej w różnych progach IoU, a więc ma lepszą zdolność do generalizacji.
 - Oba modele mają podobny stopień stabilności, chociaż w przypadku wyników walidacyjnych, pierwszy model ma mniejsze oscylacje.
+
+#### Opcjonalne pliki
+
+- `check_gpu.py` służy do sprawdzenia czy komputer ma możliwość skorzystania z karty graficznej do trenowania. Użycie GPU zamiast CPU wymagałoby zmiany kodu w pliku `train_yolo.py`.
+- `convert_png_to_jpg.py` służy do konwersji plików .png do .jpg.
