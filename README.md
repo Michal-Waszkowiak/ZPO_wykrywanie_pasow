@@ -61,6 +61,23 @@ Przykład serii zdjęć walidacyjnych (prediction):
 
 ![val_batch2_pred.jpg](runs/segment/train4/val_batch2_pred.jpg)
 
+## Porównanie wyników z QGIS
+
+Poniżej znajdują się przykładowe wyniki, które zostały uzyskane za pomoca programu QGIS i wtyczki Deepness
+
+<table>
+  <tr>
+    <td style="text-align: center; width: 50%;">
+      <img src="QGIS_result/best_900_images.png" alt="Przykładowy wynik dla modelu 900_images.onnx" style="width: 100%;" />
+      <p style="text-align: center;">Przykładowy wynik dla modelu 900_images.onnx</p>
+    </td>
+    <td style="text-align: center; width: 50%;">
+      <img src="QGIS_result/best_ZPO.png" alt="Przykładowy wynik dla modelu best_ZPO.onnx" style="width: 100%;" />
+      <p style="text-align: center;">Przykładowy wynik dla modelu best_ZPO.onnx</p>
+    </td>
+  </tr>
+</table>
+
 ## Podsumowanie
 
 Analizując wykresy przedstawiające wyniki treningu dla modelu `900_images.onnx` i `best_ZPO.onnx` można zauważyć, że pierwszy model jest minimalnie dokładnieszy.
