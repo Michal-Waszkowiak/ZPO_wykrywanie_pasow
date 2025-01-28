@@ -1,5 +1,12 @@
 # ZPO_wykrywanie_pasow
+
+![Banner](QGIS_result/banner.png)
+
 Projekt dotyczący Zaawansowanego Przetwarzania Obrazów, gdzie głównym zadaniem było nauczenie modelu do wykrywania przejść dla pieszych i przejazdów rowerowych. Wykorzystany model do trenowania to YOLO 8 Segmentation.
+
+## Dataset
+
+Do realizacji projektu wykorzystano serię zdjęć pozyskanych za pomocą oprogramowania QGIS przy użyciu wtyczki Deepness. Następnie, obrazy te zostały zaimportowane do platformy Roboflow, gdzie przeprowadzono proces ich oznaczania. Na zdjęciach oznaczono przejazdy dla rowerów oraz przejścia dla pieszych, przypisując im odpowiednie etykiety: **bicycle_crossing** dla przejazdów rowerowych oraz **pedestrian_crossing** dla przejść dla pieszych.
 
 ## Procedura uczenia
 
@@ -91,3 +98,7 @@ Analizując wykresy przedstawiające wyniki treningu dla modelu `900_images.onnx
 
 - `check_gpu.py` służy do sprawdzenia czy komputer ma możliwość skorzystania z karty graficznej do trenowania. Użycie GPU zamiast CPU wymagałoby zmiany kodu w pliku `train_yolo.py`.
 - `convert_png_to_jpg.py` służy do konwersji plików .png do .jpg.
+
+</br>
+
+*Autorzy: Waszkowiak Michał, Woźniak Dawid*
